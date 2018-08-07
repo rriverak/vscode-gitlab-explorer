@@ -14,8 +14,17 @@ export class GitlabExplorer {
         this.gitlabExplorerProvider = new GitlabExplorerProvider(apiProvider);
         vscode.window.registerTreeDataProvider('gitlabExplorer', this.gitlabExplorerProvider);
 
-		let cmdRefresh = vscode.commands.registerCommand('gitlabExplorer.refresh', () => this.RefreshTreeView());
-		context.subscriptions.push(cmdRefresh);
+		vscode.commands.getCommands(true).then((cmds)=>{
+			cmds = cmds.filter((cmd)=>{
+				if(cmd === 'gitlabExplorer.refresh'){
+					return true;
+				}
+			});
+			if(cmds.length === 0){
+				let cmdRefresh = vscode.commands.registerCommand('gitlabExplorer.refresh', () => this.RefreshTreeView(), this);
+				context.subscriptions.push(cmdRefresh);
+			}
+		});
     }
     
     public RefreshTreeView(){

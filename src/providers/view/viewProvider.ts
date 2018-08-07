@@ -14,8 +14,18 @@ export class GitlabView {
 	constructor(context: vscode.ExtensionContext, assetProvider:AssetProvider, private apiProvider:GitlabAPIProvider) {
         this.viewProvider = new ViewProvider(assetProvider, apiProvider);
 
-        let openViewDispatcher = vscode.commands.registerCommand('gitlabView.openView', (element:ITreeNode) => this.OpenViewCommand(element));
-		context.subscriptions.push(openViewDispatcher);
+
+		vscode.commands.getCommands(true).then((cmds)=>{
+			cmds = cmds.filter((cmd)=>{
+				if(cmd === 'gitlabView.openView'){
+					return true;
+				}
+			});
+			if(cmds.length === 0){
+                let openViewDispatcher = vscode.commands.registerCommand('gitlabView.openView', (element:ITreeNode) => this.OpenViewCommand(element));
+				context.subscriptions.push(openViewDispatcher);
+			}
+		});
     }
     
     OpenViewCommand(element:ITreeNode){

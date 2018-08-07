@@ -1,12 +1,5 @@
 # VS Code - GitLab Explorer
 
-[![](http://vsmarketplacebadge.apphb.com/version-short/jasonn-porch.gitlab-mr.svg
-)
-![](http://vsmarketplacebadge.apphb.com/installs-short/jasonn-porch.gitlab-mr.svg
-)
-![](http://vsmarketplacebadge.apphb.com/rating-short/jasonn-porch.gitlab-mr.svg
-)](https://marketplace.visualstudio.com/items?itemName=jasonn-porch.gitlab-mr)
-
 VS Code extension for working with GitLab Project Items, supporting both GitLab.com and custom GitLab Servers.
 
 ![image](md_assets/screen01.png)
@@ -17,6 +10,7 @@ VS Code extension for working with GitLab Project Items, supporting both GitLab.
 * View Issues and Discssions in VSCode
 
 ## Planned
+* Improve UI in Views
 * Show Gitlab ToDos and Jump in TreeView 
 * Create / Edit Issues in VSCode
 * Create / Edit Comment in VSCode
@@ -29,7 +23,7 @@ VS Code extension for working with GitLab Project Items, supporting both GitLab.
 To create a `gitlab-explorer.personalToken` with `api` Scope follow the instructions in the Gitlab documentation.   
 - [[Gitlab.com] Creating a personal access token](https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html#creating-a-personal-access-token)
 
-### Settings Example
+### Required Settings
 
 #### Gitlab.com Example
 ```json

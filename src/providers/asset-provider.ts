@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import * as path from 'path';
 import { ItemTypeEnum } from '../Models/Enum';
-import { timingSafeEqual } from 'crypto';
 
 export class AssetProvider {
     static current: AssetProvider;

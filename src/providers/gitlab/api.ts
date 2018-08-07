@@ -5,6 +5,7 @@ import { Issue } from '../../Models/Issue';
 import { Comment } from '../../Models/Comment';
 import { IssueLabel } from '../../Models/IssueLabel';
 import { IMarkdownConvertable } from './IMarkdownConvertable';
+import * as vscode from 'vscode';
 
 export class GitlabAPIProvider {
     static current: GitlabAPIProvider;
@@ -12,6 +13,17 @@ export class GitlabAPIProvider {
     private httpClient:AxiosInstance; 
     private apiBaseUrl:string;
     constructor(apiBase:string, privateToken:string){
+        
+        let cfg:AxiosRequestConfig = {
+            baseURL: apiBase + '/api/v4',
+            headers: {'Private-Token': privateToken}          
+        };
+        
+        this.apiBaseUrl = apiBase;
+        this.httpClient = axios.create(cfg);
+    }
+
+    public Init(apiBase:string, privateToken:string){
         let cfg:AxiosRequestConfig = {
             baseURL: apiBase + '/api/v4',
             headers: {'Private-Token': privateToken}          
@@ -155,6 +167,7 @@ export class GitlabAPIProvider {
     }
     
     HandleError(error:any){
+        vscode.window.showWarningMessage(`GitLab Explorer: Error => ${error.message}`);
         console.log(error);
     }
 

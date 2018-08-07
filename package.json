@@ -37,7 +37,22 @@
                 "command": "gitlabExplorer.refresh",
                 "group": "global@1"
             }]
-        }
+        },
+        "configuration": [{
+            "title": "GitLab Explorer Configuration",
+            "properties": {
+                "gitlab-explorer.serverAddress": {
+                    "type": ["string", "null"],
+                    "default": null,
+                    "description": "Set a Custom GitLab-Server Adress. Otherwise, https://gitlab.com"
+                },
+                "gitlab-explorer.personalToken": {
+                    "type": ["string"],
+                    "required": true,
+                    "description": "Set the Personal API-Token from your GitLab Account."
+                }
+            }
+        }]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
