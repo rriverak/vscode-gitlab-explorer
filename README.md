@@ -1,8 +1,8 @@
 # VS Code - GitLab Explorer
-![image](https://vsmarketplacebadge.apphb.com/version-short/rrivera.vscode-gitlab-explorer.svg)
+[![image](https://vsmarketplacebadge.apphb.com/version-short/rrivera.vscode-gitlab-explorer.svg)
 ![image](https://vsmarketplacebadge.apphb.com/rating-short/rrivera.vscode-gitlab-explorer.svg
 )
-![image](https://vsmarketplacebadge.apphb.com/installs/rrivera.vscode-gitlab-explorer.svg)
+![image](https://vsmarketplacebadge.apphb.com/installs/rrivera.vscode-gitlab-explorer.svg)](https://marketplace.visualstudio.com/items?itemName=rrivera.vscode-gitlab-explorer)
 
 
 VS Code extension for working with GitLab Project Items, supporting both GitLab.com and custom GitLab Servers.
