@@ -2,7 +2,7 @@
     "name": "vscode-gitlab-explorer",
     "displayName": "GitLab Explorer",
     "description": "VSCode GitLab Explorer Extension to Work with GitLab Project Items like Groups, Projects, Issues etc.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "rrivera",
     "repository": "https://github.com/rriverak/vscode-gitlab-explorer",
     "engines": {
