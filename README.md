@@ -1,4 +1,4 @@
-# VS Code - Gitlab Explorer
+# VS Code - GitLab Explorer
 
 [![](http://vsmarketplacebadge.apphb.com/version-short/jasonn-porch.gitlab-mr.svg
 )
@@ -7,7 +7,7 @@
 ![](http://vsmarketplacebadge.apphb.com/rating-short/jasonn-porch.gitlab-mr.svg
 )](https://marketplace.visualstudio.com/items?itemName=jasonn-porch.gitlab-mr)
 
-VS Code extension for working with Gitlab Project Items, supporting both Gitlab.com and self-hosted Gitlab EE/CE Servers.
+VS Code extension for working with GitLab Project Items, supporting both GitLab.com and self-hosted GitLab EE/CE Servers.
 
 ## Features
 
@@ -15,14 +15,17 @@ VS Code extension for working with Gitlab Project Items, supporting both Gitlab.
 * View Issues and Discssions in VSCode
 
 ## Planned
-* Show Gitlab Todos and Jump in TreeView 
+* Show Gitlab ToDos and Jump in TreeView 
 * Create / Edit Issues in VSCode
 * Create / Edit Comment in VSCode
 
 ## Extension Settings
 
-* `gitlab-explorer.serverAddress`: GitLab Server URL. (HTTPS is Required!)
-* `gitlab-explorer.personalToken`: Personal access token to use the Gitlab API.
+* `gitlab-explorer.serverAddress`: GitLab Server URL.
+* `gitlab-explorer.personalToken`: Personal access token to use the GitLab API.
+
+To create a `gitlab-explorer.personalToken` follow the instructions in the Gitlab documentation.   
+[[Gitlab.com] Creating a personal access token](https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html#creating-a-personal-access-token)
 
 ### Settings Example
 
@@ -30,14 +33,21 @@ VS Code extension for working with Gitlab Project Items, supporting both Gitlab.
 ```json
 "gitlab-explorer.personalToken": "MY_PERSONAL_TOKEN"
 ```
+*If `gitlab-explorer.serverAddress` is not set, it use Gitlab.com by default.*
 
-**SelfHosted Example**
+**SelfHosted Example**  
 ```json
-"gitlab-explorer.serverAddress": "https://mydomain.com/relativepath/gitlab"
+"gitlab-explorer.serverAddress": "https://gitlab.mydomain.com" 
 "gitlab-explorer.personalToken": "MY_PERSONAL_TOKEN"
 ```
+Its also possible to use a ReverseProxy or SSL Offloading.
 
- 
+```json
+"gitlab-explorer.serverAddress": "https://mydomain.com/someSegement/gitlab" 
+"gitlab-explorer.personalToken": "MY_PERSONAL_TOKEN"
+```
+>*For Security Reasons Gitlab-Explorer serves only HTTPS Resources. Including Uploads and Assets in Markdown*
+
 
 ## Links
 
