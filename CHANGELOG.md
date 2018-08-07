@@ -1,7 +1,5 @@
-# Change Log
-All notable changes to the "vscode-gitlab" extension will be documented in this file.
+# CHANGELOG
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.1.0 [Unpublished]
+* Init Repository with Viewer Only and no Settings
 
-## [Unreleased]
-- Initial release

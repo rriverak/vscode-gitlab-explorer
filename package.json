@@ -1,8 +1,8 @@
 {
-    "name": "vscode-gitlab",
-    "displayName": "vscode-gitlab",
-    "description": "VSCode Gitlab Extension",
-    "version": "0.0.1",
+    "name": "vscode-gitlab-explorer",
+    "displayName": "GitLab Explorer",
+    "description": "VSCode GitLab Explorer Extension to Work with GitLab Project Items like Groups, Projects, Issues etc.",
+    "version": "0.1.0",
     "publisher": "rrivera",
     "engines": {
         "vscode": "^1.25.0"
@@ -17,13 +17,13 @@
     "contributes": {
         "viewsContainers": {
             "activitybar": [{
-                "id": "vscode-gitlab-project",
+                "id": "vscode-gitlab-explorer",
                 "title": "Gitlab Project",
                 "icon": "./src/assets/svg/gitlab.svg"
             }]
         },
         "views": {
-            "vscode-gitlab-project": [{
+            "vscode-gitlab-explorer": [{
                 "id": "gitlabExplorer",
                 "name": "Explorer"
             }]
