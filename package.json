@@ -1,0 +1,59 @@
+{
+    "name": "vscode-gitlab",
+    "displayName": "vscode-gitlab",
+    "description": "VSCode Gitlab Extension",
+    "version": "0.0.1",
+    "publisher": "rrivera",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [{
+                "id": "vscode-gitlab-project",
+                "title": "Gitlab Project",
+                "icon": "./src/assets/svg/gitlab.svg"
+            }]
+        },
+        "views": {
+            "vscode-gitlab-project": [{
+                "id": "gitlabExplorer",
+                "name": "Explorer"
+            }]
+        },
+        "commands": [{
+            "command": "gitlabExplorer.refresh",
+            "title": "Gitlab - Explorer Refresh"
+        }],
+        "menus": {
+            "view/item/context": [{
+                "command": "gitlabExplorer.refresh",
+                "group": "global@1"
+            }]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "axios": "^0.18.0"
+    }
+}
