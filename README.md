@@ -2,7 +2,7 @@
 
 VS Code extension for working with GitLab Project Items, supporting both GitLab.com and custom GitLab Servers.
 
-![image](md_assets/screen01.png)
+![image](https://user-images.githubusercontent.com/7319154/43791222-4f2006ae-9a75-11e8-855c-08e9c53dff0a.png)
 
 ## Features
 

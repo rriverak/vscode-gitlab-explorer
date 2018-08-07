@@ -11,7 +11,7 @@ import { IssueView } from '../../templates/issueView';
 export class GitlabView {
 	private viewProvider: ViewProvider;
     
-	constructor(context: vscode.ExtensionContext, assetProvider:AssetProvider, private apiProvider:GitlabAPIProvider) {
+	constructor(context: vscode.ExtensionContext, assetProvider:AssetProvider, apiProvider:GitlabAPIProvider) {
         this.viewProvider = new ViewProvider(assetProvider, apiProvider);
 
 

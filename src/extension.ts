@@ -9,15 +9,6 @@ import { GitlabView } from './providers/view/viewProvider';
 
 export function activate(context: vscode.ExtensionContext) {
     console.log('"vscode-gitlab" is now active!');
-    //URL => https://gitlab.com
-    //Token => Jq2TXjTmU8Zxn-tzzy1m
-
-    //URL => https://gitlab.com //Test
-    //Token => 7xYNZ781DyYWxSbtU9xL
-
-    //MailPro
-    //https://www.mailprofessionals.de/git
-    //N2JF3Nfy5F3cmusiYbEw
 
     const configuration = vscode.workspace.getConfiguration();
     InitExtensionWithConfiguration(context,configuration);
