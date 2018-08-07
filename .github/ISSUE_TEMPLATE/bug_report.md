@@ -24,5 +24,6 @@ If applicable, add screenshots to help explain your problem.
  - OS: [e.g. MacOS, Win, Linux]
  - VSCode Version [e.g. 22]
  - GitLab Server / Version
+ 
 **Additional context**
 Add any other context about the problem here.
