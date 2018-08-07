@@ -12,10 +12,13 @@ export function activate(context: vscode.ExtensionContext) {
     //URL => https://gitlab.com
     //Token => Jq2TXjTmU8Zxn-tzzy1m
 
+    //URL => https://gitlab.com //Test
+    //Token => 7xYNZ781DyYWxSbtU9xL
+
     //MailPro
     //https://www.mailprofessionals.de/git
     //N2JF3Nfy5F3cmusiYbEw
-    const apiProvider = new GitlabAPIProvider("https://www.mailprofessionals.de/git","N2JF3Nfy5F3cmusiYbEw");    
+    const apiProvider = new GitlabAPIProvider("https://gitlab.com","7xYNZ781DyYWxSbtU9xL");    
     const assetProvider = new AssetProvider(context);
     const explorer = new GitlabExplorer(context, apiProvider);
     const view = new GitlabView(context, assetProvider, apiProvider);

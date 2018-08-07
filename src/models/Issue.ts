@@ -68,7 +68,7 @@ export class Issue implements ITreeNode, IRequestable, IMarkdownConvertable {
                 return { light: "", dark: "" };
         }
         GetTreeItemLabel(): string {
-                return `<b>${this.raw_data["title"]}</b>`;
+                return this.raw_data["title"];
         }
         GetTreeItemCommand(): vscode.Command  | undefined {
                 return {
