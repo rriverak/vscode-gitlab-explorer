@@ -1,0 +1,8 @@
+pre {
+    font-size: 13px;
+    line-height: 1.6em;
+    overflow-x: auto;
+    font-family: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+    word-break: break-all;
+    word-wrap: break-word;
+}
