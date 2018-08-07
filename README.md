@@ -47,7 +47,7 @@ Its also possible to use a ReverseProxy or SSL Offloading.
 
 ## Links
 
-* Visual Studio Marketplace: [https://marketplace.visualstudio.com/items?itemName=jasonn-porch.gitlab-mr](https://marketplace.visualstudio.com/items?itemName=jasonn-porch.gitlab-mr)
+* Visual Studio Marketplace: [https://marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=rrivera.vscode-gitlab-explorer)
 * Repo: [https://github.com/rriverak/vscode-gitlab-explorer](https://github.com/rriverak/vscode-gitlab-explorer)
 * Issues: [https://github.com/rriverak/vscode-gitlab-explorer/issues](https://github.com/rriverak/vscode-gitlab-explorer/issues)
 * Change Log: [https://github.com/rriverak/vscode-gitlab-explorer/blob/master/CHANGELOG.md](https://github.com/rriverak/vscode-gitlab-explorer/blob/master/CHANGELOG.md)
